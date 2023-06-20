@@ -1,4 +1,4 @@
-module common-tools
+module github.com/JackyBaooo/common-tools
 
 go 1.18
 
