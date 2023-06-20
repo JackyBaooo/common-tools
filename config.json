@@ -1,0 +1,21 @@
+{
+  "env": "dev",
+  "log": {
+    "level": "debug"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+  "mongodb": {
+    "url": "mongodb://root:root@10.100.97.80",
+    "db": "test",
+    "timeout": 10
+  },
+  "redis": {
+    "addr": ["10.100.97.80:26379"],
+    "poolSize": 10,
+    "masterName": "mymaster",
+    "timeout": 10
+  }
+}
