@@ -12,4 +12,5 @@ func main() {
 	fmt.Println(config.Init(zflag.ConfigFile))
 	fmt.Println(config.GlobalConfig)
 	fmt.Println(logger.Init(config.GlobalConfig.Log.Level))
+	logger.Info("hello world", "hello world", true, true, true)
 }

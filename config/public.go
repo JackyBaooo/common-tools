@@ -1,6 +1,10 @@
 package config
 
-import "github.com/spf13/viper"
+import (
+	"encoding/json"
+	"github.com/JackyBaooo/common-tools/internal"
+	"github.com/spf13/viper"
+)
 
 var (
 	GlobalViper  *viper.Viper
@@ -25,5 +29,8 @@ func Init(file string) (err error) {
 	if err != nil {
 		return
 	}
+	out, _ := json.Marshal(GlobalViper.AllSettings())
+	internal.Infof("GlobalViper: %s", string(out))
+	internal.Infof("GlobalConfig: %+v", GlobalConfig)
 	return
 }
