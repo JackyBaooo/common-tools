@@ -1,10 +1,10 @@
 package main
 
 import (
-	"common-tools/config"
-	"common-tools/logger"
-	"common-tools/zflag"
 	"fmt"
+	"github.com/JackyBaooo/common-tools/config"
+	"github.com/JackyBaooo/common-tools/logger"
+	"github.com/JackyBaooo/common-tools/zflag"
 )
 
 func main() {
