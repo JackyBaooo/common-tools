@@ -8,7 +8,7 @@ import (
 var (
 	// internal variables
 	help bool
-	// external variables
+	// exported variables
 	ConfigFile string
 )
 
