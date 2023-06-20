@@ -15,6 +15,6 @@ func Init(level string) error {
 	default:
 		return fmt.Errorf("unknown log level: %s", level)
 	}
-	log.Infof("InitLog success, log level: %s", level)
+	fmt.Printf("InitLog success, log level: %s\n", level)
 	return nil
 }
